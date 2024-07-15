@@ -16,8 +16,7 @@ app.use(cors({
 app.use(express.json())
 
 
-
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.orv8anl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.orv8anl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 // console.log(uri)
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -103,9 +102,9 @@ run().catch(console.dir);
 
 
 app.get("/", (req, res) => {
-  res.send("medical camp is running properly")
+  res.send("MoveCash is running properly")
 })
 
 app.listen(port, () => {
-  console.log(`Medical camp is running on port ${port}`)
+  console.log(`MoveCash is running on port ${port}`)
 })
